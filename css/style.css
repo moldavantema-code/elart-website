@@ -50,20 +50,13 @@ header.site.solid{background:rgba(246,242,234,.94);backdrop-filter:blur(10px);-w
 .burger span{display:block;width:26px;height:1px;background:var(--ink);margin:7px 0}
 .mnav{background:var(--ivory);border-top:1px solid var(--line);padding-block:8px 24px}
 .mnav a{display:block;padding:14px 0;font:400 30px/1.15 var(--serif);text-decoration:none;border-bottom:1px solid var(--line)}
-/* Home: the hero already shows the big ELART, so the header mark appears only once the header turns solid (scroll or open menu) */
-body.home .nav .mark{transition:opacity .4s,visibility 0s}
-body.home header.site:not(.solid) .nav .mark{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .4s,visibility 0s .4s}
 @media (max-width:980px){.nav{grid-template-columns:auto 1fr}.nav ul,.nav .right{display:none}.burger{display:block}.mark{justify-self:start;padding-left:0}}
 
 /* Hero */
 .hero{position:relative;height:100svh;min-height:560px;max-height:1100px;display:grid;align-items:end}
 .hero .ph{position:absolute;inset:0}
 .hero .ph .tag{left:auto;right:var(--gutter);bottom:24px}
-/* Veil over the photo/video, under the text: light wash at the top for the menu, stronger from the bottom for the headline */
-.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:
-  linear-gradient(to bottom,color-mix(in srgb,var(--ivory) 35%,transparent) 0,transparent 120px),
-  linear-gradient(to top,color-mix(in srgb,var(--ivory) 85%,transparent) 0%,transparent 55%)}
-.hero-in{position:relative;z-index:2;padding-bottom:clamp(40px,7vh,88px);display:grid;gap:clamp(18px,3vh,30px)}
+.hero-in{position:relative;padding-bottom:clamp(40px,7vh,88px);display:grid;gap:clamp(18px,3vh,30px)}
 .hero h1{font-size:clamp(76px,19vw,300px);letter-spacing:.14em;line-height:.85;margin-left:-.04em;animation:track 2.2s cubic-bezier(.2,.7,.2,1) both}
 @keyframes track{from{letter-spacing:.42em;opacity:.25}to{letter-spacing:.14em;opacity:1}}
 .hero .sub{display:flex;flex-wrap:wrap;gap:14px 40px;align-items:baseline;justify-content:space-between}
