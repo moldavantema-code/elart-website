@@ -58,7 +58,7 @@
 <main id="top">
   <!-- HERO: replace .ph with a 6–8 sec muted loop: <video autoplay muted loop playsinline poster="hero.jpg"> -->
   <section class="hero">
-    <img class="ph" src="https://images.unsplash.com/photo-1681270496598-13c5365730c8?auto=format&fit=crop&w=2200&q=75" alt="Chef plating small dishes with tweezers on a wooden board" fetchpriority="high">
+    <img class="ph" src="images/hero.jpg" alt="ELART dessert table at a garden wedding in Miami" fetchpriority="high">
     <div class="wrap hero-in">
       <h1>ELART</h1>
       <div class="sub">
@@ -84,7 +84,7 @@
 
   <div class="wrap" id="weddings">
     <div class="course">
-      <a class="media" href="#inquire"><img class="ph zoom" src="https://images.unsplash.com/photo-1750735677308-34756dc5e821?auto=format&fit=crop&w=1400&q=75" alt="Wedding reception table with florals, candles and glassware" loading="lazy"></a>
+      <a class="media" href="#inquire"><video class="ph zoom" src="images/wedding.mp4" poster="images/wedding.jpg" autoplay muted loop playsinline aria-label="ELART wedding dessert table"></video></a>
       <div class="txt">
         <span class="num">i. First course</span>
         <h2>Weddings</h2>
@@ -112,12 +112,22 @@
         <a class="link" href="#inquire">Book the chef</a>
       </div>
     </div>
+
+    <div class="course flip" id="estate">
+      <a class="media" href="#inquire"><video class="ph zoom" src="images/estate.mp4" poster="images/estate.jpg" autoplay muted loop playsinline aria-label="Fountain and gardens at the estate"></video></a>
+      <div class="txt">
+        <span class="num">iv. The estate</span>
+        <h2>A private estate for your event</h2>
+        <p>Gardens, fountains and an open lawn for ceremonies and receptions. <mark>[Area · up to XXX guests]</mark></p>
+        <a class="link" href="#inquire">Ask about the estate</a>
+      </div>
+    </div>
   </div>
 
   <a class="bleed" href="yacht.html" style="display:block;color:var(--ink);text-decoration:none">
     <img class="ph" src="https://images.unsplash.com/photo-1565013111912-483ca5f89783?auto=format&fit=crop&w=2200&q=75" alt="Glass of white wine on a yacht deck at sunset" loading="lazy">
     <div class="cap">
-      <span class="lbl">iv. On the water</span>
+      <span class="lbl">v. On the water</span>
       <h2>ELART Yacht</h2>
       <span class="link">Explore yacht catering</span>
     </div>
@@ -160,10 +170,10 @@
     </div>
   </section>
 
-  <section class="wrap" id="gallery" hidden>
-    <div class="gal-head"><h2>Recent evenings</h2><a class="link" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram <mark>@elart</mark></a></div>
+  <section class="wrap" id="gallery">
+    <div class="gal-head"><h2>A recent wedding</h2><a class="link" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram <mark>@elart</mark></a></div>
     <div class="gal">
-      <div class="ph d"></div><div class="ph"></div><div class="ph b"></div><div class="ph c"></div><div class="ph"></div><div class="ph b"></div><div class="ph c"></div><div class="ph d"></div>
+      <img class="ph" src="images/gallery/g1.jpg" alt="Dessert table and the estate at golden hour" loading="lazy"><img class="ph" src="images/gallery/g2.jpg" alt="Tiered dessert stands with white flowers" loading="lazy"><img class="ph" src="images/gallery/g3.jpg" alt="Croissants, macarons and pavlovas on the dessert table" loading="lazy"><img class="ph" src="images/gallery/g4.jpg" alt="Wedding table with white florals and crystal glasses" loading="lazy"><img class="ph" src="images/gallery/g5.jpg" alt="Garden fountain and bougainvillea" loading="lazy"><img class="ph" src="images/gallery/g6.jpg" alt="Dessert table with the estate in the background" loading="lazy"><img class="ph" src="images/gallery/g7.jpg" alt="Dessert stands and white lisianthus" loading="lazy"><img class="ph" src="images/gallery/g8.jpg" alt="Estate garden at sunset" loading="lazy">
     </div>
   </section>
 
@@ -183,28 +193,29 @@
   <section class="inq" id="inquire">
     <div class="wrap inq-grid">
       <div class="side">
-        <span class="lbl" style="color:var(--mute)">v. Last toast</span>
+        <span class="lbl" style="color:var(--mute)">vi. Last toast</span>
         <h2 style="margin-top:20px">Tell us about <em>your evening.</em></h2>
         <p>Olena replies personally within 24 hours.</p>
         <div class="contact"><span>Call or text <b>[+1 305 XXX XXXX]</b></span><span>Email <b>[hello@elart…]</b></span></div>
       </div>
       <div>
-        <form id="form" data-form="home" novalidate>
+        <form id="form" name="inquiry" data-form="home" method="POST" data-netlify="true" netlify-honeypot="company" novalidate>
+          <input type="hidden" name="form-name" value="inquiry"><p hidden><label>Leave empty <input name="company"></label></p>
           <div class="prog"><span id="p1" class="on">1 · You</span><span>/</span><span id="p2">2 · Your event</span></div>
           <div class="fields" id="s1">
-            <div class="f"><label for="name">Name</label><input id="name" autocomplete="name"><span class="err" id="e-name"></span></div>
-            <div class="f"><label for="email">Email</label><input id="email" type="email" autocomplete="email"><span class="err" id="e-email"></span></div>
-            <div class="f"><label for="phone">Phone</label><input id="phone" type="tel" autocomplete="tel"></div>
-            <div class="f"><label for="date">Date</label><input id="date" type="date"><span class="err" id="e-date"></span></div>
-            <div class="f full"><label for="type">Occasion</label><select id="type"><option value="">Select</option><option>Wedding</option><option>Rehearsal dinner</option><option>Private celebration</option><option>Chef’s table at home</option><option>Yacht charter</option><option>Corporate</option></select><span class="err" id="e-type"></span></div>
+            <div class="f"><label for="name">Name</label><input id="name" name="name" autocomplete="name"><span class="err" id="e-name"></span></div>
+            <div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><span class="err" id="e-email"></span></div>
+            <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="f"><label for="date">Date</label><input id="date" name="date" type="date"><span class="err" id="e-date"></span></div>
+            <div class="f full"><label for="type">Occasion</label><select id="type" name="type"><option value="">Select</option><option>Wedding</option><option>Rehearsal dinner</option><option>Private celebration</option><option>Chef’s table at home</option><option>Yacht charter</option><option>Corporate</option></select><span class="err" id="e-type"></span></div>
             <div class="actions full"><button type="button" class="btn" id="next">Continue</button></div>
           </div>
           <div class="fields" id="s2" hidden>
-            <div class="f"><label for="venue">Venue or address</label><input id="venue"></div>
-            <div class="f"><label for="guests">Guests</label><input id="guests" type="number" min="1" inputmode="numeric"></div>
-            <div class="f full"><label for="budget">Catering budget</label><select id="budget"><option value="">Optional</option><option>$7,500 – $15,000</option><option>$15,000 – $30,000</option><option>$30,000 – $50,000</option><option>$50,000+</option><option>Not sure yet</option></select></div>
-            <div class="f full"><label for="vision">The evening you imagine</label><textarea id="vision"></textarea></div>
-            <label class="consent full" for="sms"><input type="checkbox" id="sms"><span>I agree to receive text messages from ELART about my inquiry. Message and data rates may apply. Reply STOP to opt out.</span></label>
+            <div class="f"><label for="venue">Venue or address</label><input id="venue" name="venue"></div>
+            <div class="f"><label for="guests">Guests</label><input id="guests" name="guests" type="number" min="1" inputmode="numeric"></div>
+            <div class="f full"><label for="budget">Catering budget</label><select id="budget" name="budget"><option value="">Optional</option><option>$7,500 – $15,000</option><option>$15,000 – $30,000</option><option>$30,000 – $50,000</option><option>$50,000+</option><option>Not sure yet</option></select></div>
+            <div class="f full"><label for="vision">The evening you imagine</label><textarea id="vision" name="vision"></textarea></div>
+            <label class="consent full" for="sms"><input type="checkbox" id="sms" name="sms_consent" value="yes"><span>I agree to receive text messages from ELART about my inquiry. Message and data rates may apply. Reply STOP to opt out.</span></label>
             <div class="actions full"><button type="button" class="btn ghost" id="back">Back</button><button type="submit" class="btn">Start planning</button></div>
           </div>
         </form>
@@ -212,7 +223,7 @@
           <span class="lbl" style="color:var(--mute)">Received</span>
           <h3>Thank you, <span id="tname"></span>.</h3>
           <p>Olena will be in touch within 24 hours.</p>
-          <p style="font-size:12.5px;color:var(--mute)">Preview only: the form is not connected yet.</p>
+          
         </div>
       </div>
     </div>

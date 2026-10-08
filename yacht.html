@@ -187,12 +187,13 @@
         <div class="contact"><span>Call or text <b>[+1 305 XXX XXXX]</b></span><span>Email <b>[yacht@elart…]</b></span></div>
       </div>
       <div>
-        <form id="form" data-form="yacht" novalidate>
+        <form id="form" name="yacht-quote" data-form="yacht" method="POST" data-netlify="true" netlify-honeypot="company" novalidate>
+          <input type="hidden" name="form-name" value="yacht-quote"><p hidden><label>Leave empty <input name="company"></label></p>
           <div class="fields">
-            <div class="f"><label for="date">Charter date</label><input id="date" type="date"><span class="err" id="e-date"></span></div>
-            <div class="f"><label for="guests">Guests</label><input id="guests" type="number" min="1" inputmode="numeric"><span class="err" id="e-guests"></span></div>
-            <div class="f"><label for="marina">Marina or dock</label><input id="marina"></div>
-            <div class="f"><label for="boat">Boat name &amp; length</label><input id="boat"></div>
+            <div class="f"><label for="date">Charter date</label><input id="date" name="date" type="date"><span class="err" id="e-date"></span></div>
+            <div class="f"><label for="guests">Guests</label><input id="guests" name="guests" type="number" min="1" inputmode="numeric"><span class="err" id="e-guests"></span></div>
+            <div class="f"><label for="marina">Marina or dock</label><input id="marina" name="marina"></div>
+            <div class="f"><label for="boat">Boat name &amp; length</label><input id="boat" name="boat"></div>
             <div class="f full"><label>Format</label>
               <div class="radio">
                 <label><input type="radio" name="fmt" value="Delivery" checked> Dockside delivery</label>
@@ -201,13 +202,13 @@
                 <label><input type="radio" name="fmt" value="Unsure"> Not sure</label>
               </div>
             </div>
-            <div class="f"><label for="len">Charter length</label><select id="len"><option value="">Select</option><option>Sunset, 2–3 hours</option><option>Half day</option><option>Full day</option><option>Overnight or multi-day</option></select></div>
-            <div class="f"><label for="galley">Galley on board?</label><select id="galley"><option value="">Select</option><option>Yes, full galley</option><option>Small kitchenette</option><option>No galley</option><option>Don’t know</option></select></div>
-            <div class="f"><label for="name">Name</label><input id="name" autocomplete="name"><span class="err" id="e-name"></span></div>
-            <div class="f"><label for="phone">Phone</label><input id="phone" type="tel" autocomplete="tel"><span class="err" id="e-phone"></span></div>
-            <div class="f full"><label for="email">Email</label><input id="email" type="email" autocomplete="email"></div>
-            <div class="f full"><label for="vision">Occasion, allergies, anything else</label><textarea id="vision"></textarea></div>
-            <label class="consent full" for="sms"><input type="checkbox" id="sms"><span>I agree to receive text messages from ELART about my charter. Message and data rates may apply. Reply STOP to opt out.</span></label>
+            <div class="f"><label for="len">Charter length</label><select id="len" name="len"><option value="">Select</option><option>Sunset, 2–3 hours</option><option>Half day</option><option>Full day</option><option>Overnight or multi-day</option></select></div>
+            <div class="f"><label for="galley">Galley on board?</label><select id="galley" name="galley"><option value="">Select</option><option>Yes, full galley</option><option>Small kitchenette</option><option>No galley</option><option>Don’t know</option></select></div>
+            <div class="f"><label for="name">Name</label><input id="name" name="name" autocomplete="name"><span class="err" id="e-name"></span></div>
+            <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"><span class="err" id="e-phone"></span></div>
+            <div class="f full"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+            <div class="f full"><label for="vision">Occasion, allergies, anything else</label><textarea id="vision" name="vision"></textarea></div>
+            <label class="consent full" for="sms"><input type="checkbox" id="sms" name="sms_consent" value="yes"><span>I agree to receive text messages from ELART about my charter. Message and data rates may apply. Reply STOP to opt out.</span></label>
             <div class="actions full"><button type="submit" class="btn">Get my quote</button></div>
           </div>
         </form>

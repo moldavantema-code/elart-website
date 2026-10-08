@@ -1,0 +1,6 @@
+# raw photos/videos from the phone — not for the website repo
+images/new/
+*.HEIC
+*.heic
+*.MOV
+*.mov

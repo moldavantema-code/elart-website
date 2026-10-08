@@ -59,9 +59,7 @@
     });
   }
 
-  // Submit
-  // TODO: connect to GoHighLevel. Easiest: replace this <form> with the GHL form embed,
-  // or POST the fields to a GHL inbound webhook URL (see README.md).
+  // Submit → Netlify Forms (Netlify → Forms shows every inquiry and emails it on)
   var form = $('form'), thanks = $('thanks');
   if (form && thanks) {
     form.addEventListener('submit', function (e) {
@@ -75,9 +73,20 @@
         ].every(Boolean);
         if (!ok) return;
       }
-      var name = $('name');
-      $('tname').textContent = name ? name.value.trim().split(' ')[0] : '';
-      form.hidden = true; thanks.hidden = false;
+      var btn = form.querySelector('button[type=submit]');
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      var body = new URLSearchParams(new FormData(form)).toString();
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body })
+        .then(function (r) {
+          if (!r.ok) throw new Error(r.status);
+          var name = $('name');
+          $('tname').textContent = name ? name.value.trim().split(' ')[0] : '';
+          form.hidden = true; thanks.hidden = false;
+        })
+        .catch(function () {
+          if (btn) { btn.disabled = false; btn.textContent = 'Try again'; }
+          alert('We could not send your request. Please call or text us, or try again in a minute.');
+        });
     });
   }
 })();

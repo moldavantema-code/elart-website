@@ -22,3 +22,7 @@ These are placeholders until ELART's own photo shoot. They are loaded directly f
 | Yacht · sunset band | nikldn | https://unsplash.com/photos/R5evLgDNF_4 |
 
 Not used on purpose: portraits of Artem and Olena, the "Recent evenings" gallery and the Instagram strip — those must be real ELART photos.
+
+## ELART's own photos and video (October 2026 wedding)
+
+hero.jpg, wedding.mp4/.jpg, estate.mp4/.jpg, gallery/g1–g8.jpg — shot by ELART. Originals are in images/new/ (not uploaded to GitHub; see .gitignore).
