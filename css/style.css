@@ -1,7 +1,7 @@
 /* Layout: ivory gallery. Full-bleed photo "courses" (aperitif → last toast), black high-contrast serif, almost no copy. Single light look by choice. */
 :root{
   --ivory:#F6F2EA; --cream:#EFE9DE; --ink:#141414; --ink-2:#4B4741; --mute:#7A7166; --line:#DED6C9;
-  --serif:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --serif:"Gilda Display","Didot",Georgia,"Times New Roman",serif;
   --sans:"Manrope","Helvetica Neue",Helvetica,Arial,sans-serif;
   --gutter:clamp(16px,4.5vw,64px);
   color-scheme:light;
@@ -212,7 +212,3 @@ footer .r{text-align:right}
 .hero::after{display:none}
 .hero-in{order:1;padding-block:clamp(24px,4vh,48px) clamp(28px,4vh,48px)}
 .hero .ph{order:2;position:relative;inset:auto;width:100%;height:clamp(340px,66vh,800px)}
-
-/* Calmer Bodoni: lower optical size = thicker hairlines, no "shimmer" on large headings */
-body{font-variation-settings:"opsz" 11}
-.hero h1,.mark{font-variation-settings:"opsz" 28}
