@@ -58,3 +58,5 @@ td:first-child{font:400 21px/1.25 var(--serif);color:var(--ink);width:28%}
 .radio{display:flex;flex-wrap:wrap;gap:10px}
 .radio label{display:flex;gap:8px;align-items:center;border:1px solid #BDB3A4;padding:10px 14px;font-size:14px;cursor:pointer;white-space:nowrap}
 .radio input{accent-color:#141414}
+.mn .mprice{font-size:13px;color:var(--ink-2)}
+.mn .mprice b{font:400 30px/1 var(--serif);color:var(--ink);margin-right:4px}

@@ -40,6 +40,7 @@
     <ul>
       <li><a href="#weddings">Weddings</a></li>
       <li><a href="#celebrations">Celebrations</a></li>
+      <li><a href="#menus">Menus</a></li>
       <li><a href="yacht.html">Yacht</a></li>
       <li><a href="#about">About</a></li>
     </ul>
@@ -51,7 +52,7 @@
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </div>
   <nav class="wrap mnav" id="mnav" hidden>
-    <a href="#weddings">Weddings</a><a href="#celebrations">Celebrations</a><a href="yacht.html">Yacht</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#inquire">Inquire</a>
+    <a href="#weddings">Weddings</a><a href="#celebrations">Celebrations</a><a href="#menus">Menus</a><a href="yacht.html">Yacht</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#inquire">Inquire</a>
   </nav>
 </header>
 
@@ -142,6 +143,66 @@
     </div>
   </section>
 
+  <section class="menus-sec" id="menus">
+    <div class="wrap">
+      <div class="menus-head">
+        <span class="lbl">Menus</span>
+        <h2>One price per guest. <em>Everything on the plate included.</em></h2>
+        <p>Menu, chef, kitchen team and service staff are included in the price. A 20% service charge and Florida sales tax are added. Menus change with the season and adapt to allergies and dietary needs.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <span class="lbl">Cocktail reception · 3 hours</span>
+          <h3>The Reception</h3>
+          <p class="price"><b>$95</b> per guest</p>
+          <ul>
+            <li>Six passed hors d’oeuvres, chef’s choice of the season</li>
+            <li>Tuna tartare on crisp rice, burrata crostini, beef tenderloin bites</li>
+            <li>One live station: raw bar or carving</li>
+            <li>Petit fours</li>
+          </ul>
+        </article>
+        <article class="menu-card">
+          <span class="lbl">Shared at the table</span>
+          <h3>The Garden Dinner</h3>
+          <p class="price"><b>$125</b> per guest</p>
+          <ul>
+            <li>Three passed hors d’oeuvres at cocktail hour</li>
+            <li>Bread, cultured butter, seasonal salad</li>
+            <li>Family-style platters: roasted fish, braised short rib, two sides</li>
+            <li>Dessert served to the table</li>
+          </ul>
+        </article>
+        <article class="menu-card featured">
+          <span class="lbl">Weddings · plated</span>
+          <h3>The Signature Dinner</h3>
+          <p class="price"><b>$150</b> per guest</p>
+          <ul>
+            <li>Four passed hors d’oeuvres at cocktail hour</li>
+            <li>First course: local snapper crudo, citrus, herbs</li>
+            <li>Main: filet mignon or sea bass, seasonal garnish</li>
+            <li>Dessert: plated or our dessert table</li>
+          </ul>
+        </article>
+        <article class="menu-card">
+          <span class="lbl">At your home · 8–24 guests</span>
+          <h3>Chef’s Table</h3>
+          <p class="price"><b>$150</b> per guest</p>
+          <ul>
+            <li>Five-course tasting menu cooked in your kitchen</li>
+            <li>Chef Artem serves and presents every course</li>
+            <li>Shopping, setup and cleanup included</li>
+            <li>Wine pairing on request</li>
+          </ul>
+        </article>
+      </div>
+      <div class="addons">
+        <span class="lbl">Add to any menu</span>
+        <p><b>Dessert table</b> $35 per guest · <b>Late-night bites</b> $18 per guest · <b>Bartender</b> $55 per hour · <b>Rentals</b> quoted for your event</p>
+      </div>
+    </div>
+  </section>
+
   <section class="words wrap">
     <span class="lbl" style="color:var(--mute)">How it works</span>
     <div class="row" style="margin-top:36px">
@@ -181,7 +242,7 @@
     <div class="faq-grid">
       <h2>Questions</h2>
       <div>
-        <details><summary>How much does it cost?</summary><p>Weddings and celebrations start at $150 per guest for food and service, with a $7,500 minimum. A chef’s table at home starts at $150 per guest, with a $1,500 minimum. A 20% service charge and Florida sales tax are added to every quote. Share your guest count and we will suggest the right format.</p></details>
+        <details><summary>How much does it cost?</summary><p>Our menus have one fixed price per guest: $95 for a cocktail reception, $125 for a family-style dinner, $150 for a plated wedding dinner or a chef’s table at home. A 20% service charge and Florida sales tax are added. See <a href="#menus">Menus</a> for what each includes.</p></details>
         <details><summary>How far ahead should we book?</summary><p>Weddings 6–12 months ahead, private events 3–6 weeks. Ask about your date even if it is sooner.</p></details>
         <details><summary>Is the tasting included?</summary><p>For weddings booked in our first season, the tasting for two is complimentary.</p></details>
         <details><summary>Allergies and dietary needs?</summary><p>Yes. Tell us when you inquire and we plan the menu around them.</p></details>
@@ -213,7 +274,7 @@
           <div class="fields" id="s2" hidden>
             <div class="f"><label for="venue">Venue or address</label><input id="venue" name="venue"></div>
             <div class="f"><label for="guests">Guests</label><input id="guests" name="guests" type="number" min="1" inputmode="numeric"></div>
-            <div class="f full"><label for="budget">Catering budget</label><select id="budget" name="budget"><option value="">Optional</option><option>$7,500 – $15,000</option><option>$15,000 – $30,000</option><option>$30,000 – $50,000</option><option>$50,000+</option><option>Not sure yet</option></select></div>
+            <div class="f full"><label for="budget">Catering budget</label><select id="budget" name="budget"><option value="">Optional</option><option>Under $5,000</option><option>$5,000 – $15,000</option><option>$15,000 – $30,000</option><option>$30,000 – $50,000</option><option>$50,000+</option><option>Not sure yet</option></select></div>
             <div class="f full"><label for="vision">The evening you imagine</label><textarea id="vision" name="vision"></textarea></div>
             <label class="consent full" for="sms"><input type="checkbox" id="sms" name="sms_consent" value="yes"><span>I agree to receive text messages from ELART about my inquiry. Message and data rates may apply. Reply STOP to opt out.</span></label>
             <div class="actions full"><button type="button" class="btn ghost" id="back">Back</button><button type="submit" class="btn">Start planning</button></div>
@@ -232,7 +293,7 @@
 
 <footer id="privacy">
   <div class="wrap">
-    <nav><a href="#weddings">Weddings</a><a href="yacht.html">Yacht</a><a href="#faq">FAQ</a><a href="#privacy">Privacy</a></nav>
+    <nav><a href="#weddings">Weddings</a><a href="#menus">Menus</a><a href="yacht.html">Yacht</a><a href="#faq">FAQ</a><a href="#privacy">Privacy</a></nav>
     <a class="mark" href="#top">ELART</a>
     <span class="r">Miami, Florida · © 2026</span>
   </div>
