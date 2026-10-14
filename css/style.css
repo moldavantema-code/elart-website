@@ -310,3 +310,9 @@ body.home header.site:not(.solid) :focus-visible{outline-color:var(--cream-t)}
 .philo-txt b{color:var(--ink);font-weight:600}
 @media (max-width:860px){.philo{grid-template-columns:1fr}}
 #gallery{padding-top:clamp(72px,9vw,130px)}
+
+/* Nav with six links: tighter spacing, phone hidden on mid widths, burger earlier */
+.nav ul{gap:24px}
+.nav ul a{letter-spacing:.22em}
+@media (max-width:1320px){.nav .right .tel{display:none}.nav ul{gap:18px}}
+@media (max-width:1120px){.nav{grid-template-columns:auto 1fr}.nav ul,.nav .right{display:none}.burger{display:block;justify-self:end}.mark{justify-self:start;padding-left:0}}
