@@ -316,3 +316,8 @@ body.home header.site:not(.solid) :focus-visible{outline-color:var(--cream-t)}
 .nav ul a{letter-spacing:.22em}
 @media (max-width:1320px){.nav .right .tel{display:none}.nav ul{gap:18px}}
 @media (max-width:1120px){.nav{grid-template-columns:auto 1fr}.nav ul,.nav .right{display:none}.burger{display:block;justify-self:end}.mark{justify-self:start;padding-left:0}}
+/* Home: six menu cards */
+.menu-grid{grid-template-columns:repeat(3,1fr)}
+.menu-card .mc-d{color:var(--ink-2);font-size:14.5px}
+@media (max-width:900px){.menu-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.menu-grid{grid-template-columns:1fr}}
