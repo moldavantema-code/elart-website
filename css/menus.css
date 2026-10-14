@@ -94,3 +94,10 @@
 .pkg .soon{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--mute)}
 @media (max-width:900px){.pkgs{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.pkgs{grid-template-columns:1fr}}
+/* Wedding menu page */
+.wm-price{font-size:14px;color:var(--ink-2)}
+.wm-price b{font:400 52px/1 var(--serif);color:var(--ink);margin-right:8px}
+.legend{font-size:13px;color:var(--ink-2);margin:0 0 28px}
+.wm-cta{display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center}
+.pkg .link{justify-self:start;margin-top:4px}
+.menu-card .link{justify-self:start;margin-top:4px}

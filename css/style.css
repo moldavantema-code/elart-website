@@ -321,3 +321,4 @@ body.home header.site:not(.solid) :focus-visible{outline-color:var(--cream-t)}
 .menu-card .mc-d{color:var(--ink-2);font-size:14.5px}
 @media (max-width:900px){.menu-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.menu-grid{grid-template-columns:1fr}}
+.course .links{display:flex;flex-wrap:wrap;gap:16px 28px}
