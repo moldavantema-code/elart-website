@@ -36,3 +36,10 @@ img.pc.logo,.pc img.logo{border-style:solid;padding:14px}
   .chip{white-space:nowrap;flex:0 0 auto}
   .pc .logo{height:64px}
 }
+.pc .logo.mono{border-style:solid;font:400 30px/1 var(--serif);letter-spacing:.14em;color:var(--ink);text-transform:none}
+.pc .meta span:empty{display:none}
+.pc .meta{justify-content:space-between}
+.pc .meta:has(span:empty){justify-content:flex-end}
+.pgrid{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.pgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.pgrid{grid-template-columns:1fr}}
