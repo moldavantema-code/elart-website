@@ -328,3 +328,5 @@ body.home header.site:not(.solid) :focus-visible{outline-color:var(--cream-t)}
 .intro-photo{margin:0}
 .intro-photo img{display:block;width:100%;max-width:560px;aspect-ratio:4/5;object-fit:cover;background:#1E1A17}
 @media (max-width:860px){.intro-photo img{max-width:none;aspect-ratio:4/3}}
+.duo img.ph{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.story-link{margin-top:clamp(28px,4vw,44px)}
