@@ -322,3 +322,9 @@ body.home header.site:not(.solid) :focus-visible{outline-color:var(--cream-t)}
 @media (max-width:900px){.menu-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.menu-grid{grid-template-columns:1fr}}
 .course .links{display:flex;flex-wrap:wrap;gap:16px 28px}
+
+/* Intro photo under the heading (dark block) */
+.intro-left{display:grid;gap:clamp(28px,4vw,48px);align-content:start}
+.intro-photo{margin:0}
+.intro-photo img{display:block;width:100%;max-width:560px;aspect-ratio:4/5;object-fit:cover;background:#1E1A17}
+@media (max-width:860px){.intro-photo img{max-width:none;aspect-ratio:4/3}}
