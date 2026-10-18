@@ -43,3 +43,6 @@ img.pc.logo,.pc img.logo{border-style:solid;padding:14px}
 .pgrid{grid-template-columns:repeat(3,1fr)}
 @media (max-width:900px){.pgrid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.pgrid{grid-template-columns:1fr}}
+/* Logos: same frame for monograms and real logos */
+.pc .logo{height:auto;aspect-ratio:16/10}
+.pc img.logo{display:block;width:100%;object-fit:contain;padding:0;border:1px solid var(--line);background:#F6ECDF}
