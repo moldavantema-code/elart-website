@@ -101,3 +101,10 @@
 .wm-cta{display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center}
 .pkg .link{justify-self:start;margin-top:4px}
 .menu-card .link{justify-self:start;margin-top:4px}
+/* Extras with photo */
+.extras-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:start}
+.extra-photo{margin:0}
+.extra-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.extra-photo figcaption{font:600 10.5px/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--mute);margin-top:10px}
+@media (max-width:860px){.extras-grid{grid-template-columns:1fr}.extra-photo img{aspect-ratio:4/3}}
+.extra-photo img{object-position:70% center}

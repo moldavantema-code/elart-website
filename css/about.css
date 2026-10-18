@@ -39,3 +39,5 @@
   .story-grid.flip .portrait{order:0}
   .portrait{position:static;max-width:520px}
 }
+.story-grid.flip{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+@media (max-width:900px){.story-grid.flip{grid-template-columns:1fr}}
