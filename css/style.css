@@ -330,3 +330,9 @@ body.home header.site:not(.solid) :focus-visible{outline-color:var(--cream-t)}
 @media (max-width:860px){.intro-photo img{max-width:none;aspect-ratio:4/3}}
 .duo img.ph{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
 .story-link{margin-top:clamp(28px,4vw,44px)}
+/* Footer brand + tagline, clickable phone */
+.f-brand{display:grid;justify-items:center;gap:6px}
+.f-brand .tagline{font:400 10px/1.4 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--mute)}
+@media (max-width:820px){.f-brand{justify-items:start}}
+a.tel{text-decoration:none}
+.contact a{text-decoration:none}

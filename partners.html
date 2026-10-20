@@ -31,7 +31,7 @@
     </ul>
     <a class="mark" href="index.html" aria-label="ELART home">ELART</a>
     <div class="right">
-      <span class="tel">[+1 305 XXX XXXX]</span>
+      <a class="tel" href="tel:+13058134848">+1 (305) 813-4848</a>
       <a class="btn" href="index.html#inquire">Inquire</a>
     </div>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
@@ -50,8 +50,8 @@
   </section>
 
   <section class="p-list wrap" id="list">
-    <div class="chips" role="toolbar" aria-label="Filter partners by category"><button class="chip on" data-f="all" aria-pressed="true">All</button><button class="chip" data-f="venues" aria-pressed="false">Venues &amp; estates</button><button class="chip" data-f="planners" aria-pressed="false">Planners</button><button class="chip" data-f="florals" aria-pressed="false">Florals &amp; décor</button><button class="chip" data-f="photo" aria-pressed="false">Photo &amp; video</button><button class="chip" data-f="music" aria-pressed="false">Music &amp; entertainment</button><button class="chip" data-f="food" aria-pressed="false">Food partners</button></div>
-    <!-- PARTNERS: copy one <article class="pc"> per partner. data-cat must match a filter: venues, planners, florals, rentals, photo, music, bar, cake, food, yacht, beauty, lighting, transport.
+    <div class="chips" role="toolbar" aria-label="Filter partners by category"><button class="chip on" data-f="all" aria-pressed="true">All</button><button class="chip" data-f="venues" aria-pressed="false">Venues &amp; estates</button><button class="chip" data-f="planners" aria-pressed="false">Planners</button><button class="chip" data-f="florals" aria-pressed="false">Florals &amp; décor</button><button class="chip" data-f="photo" aria-pressed="false">Photo &amp; video</button><button class="chip" data-f="music" aria-pressed="false">Music &amp; entertainment</button><button class="chip" data-f="kids" aria-pressed="false">Kids entertainment</button><button class="chip" data-f="food" aria-pressed="false">Food partners</button></div>
+    <!-- PARTNERS: copy one <article class="pc"> per partner. data-cat must match a filter: venues, planners, florals, rentals, photo, music, kids, bar, cake, food, yacht, beauty, lighting, transport.
          Logo: replace <div class="logo">Logo</div> with <img class="logo" src="images/partners/name.png" alt="Partner name"> -->
     <div class="pgrid" id="pgrid">
       <article class="pc" data-cat="venues">
@@ -81,6 +81,13 @@
         <h3>My Best Event</h3>
         <p>Event agency for weddings, parties and private celebrations.</p>
         <div class="meta"><span></span><a class="link" href="https://www.instagram.com/mybestevent.agency/" target="_blank" rel="noopener">Instagram</a></div>
+      </article>
+      <article class="pc" data-cat="kids">
+        <img class="logo" src="images/partners/madmonkeys.jpg" alt="Mad Monkeys Events logo" loading="lazy">
+        <span class="lbl">Kids entertainment</span>
+        <h3>Mad Monkeys Events</h3>
+        <p>Kids entertainers with 10 years of experience: dinosaur shows, character parties, neon parties and themed events of any size.</p>
+        <div class="meta"><span>Hallandale Beach</span><a class="link" href="https://madmonkeys.events/" target="_blank" rel="noopener">Website</a></div>
       </article>
       <article class="pc" data-cat="florals">
         <img class="logo" src="images/partners/boha.jpg" alt="BOHA Flowers logo" loading="lazy">
@@ -126,7 +133,7 @@
           <input type="hidden" name="form-name" value="partner"><p hidden><label>Leave empty <input name="website_url"></label></p>
           <div class="fields">
             <div class="f"><label for="company">Company</label><input id="company" name="company" required></div>
-            <div class="f"><label for="category">Category</label><select id="category" name="category" required><option value="">Select</option><option>Venues &amp; estates</option><option>Planners</option><option>Florals &amp; décor</option><option>Rentals</option><option>Photo &amp; video</option><option>Music &amp; entertainment</option><option>Bar service</option><option>Cake &amp; pastry</option><option>Food partners</option><option>Yacht charters</option><option>Beauty</option><option>Lighting &amp; sound</option><option>Transportation</option><option>Other</option></select></div>
+            <div class="f"><label for="category">Category</label><select id="category" name="category" required><option value="">Select</option><option>Venues &amp; estates</option><option>Planners</option><option>Florals &amp; décor</option><option>Rentals</option><option>Photo &amp; video</option><option>Music &amp; entertainment</option><option>Kids entertainment</option><option>Bar service</option><option>Cake &amp; pastry</option><option>Food partners</option><option>Yacht charters</option><option>Beauty</option><option>Lighting &amp; sound</option><option>Transportation</option><option>Other</option></select></div>
             <div class="f"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
             <div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
             <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
@@ -148,7 +155,7 @@
 <footer id="privacy">
   <div class="wrap">
     <nav><a href="index.html#weddings">Weddings</a><a href="menus.html">Menus</a><a href="yacht.html">Yacht</a><a href="partners.html">Partners</a><a href="index.html#faq">FAQ</a></nav>
-    <a class="mark" href="index.html">ELART</a>
+    <div class="f-brand"><a class="mark" href="index.html">ELART</a><span class="tagline">Good food brings people together</span></div>
     <span class="r">Licensed caterer · Miami, Florida · © 2026</span>
   </div>
 </footer>
