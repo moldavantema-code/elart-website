@@ -110,3 +110,6 @@
 .extra-photo img{object-position:70% center}
 .pl-list em{text-align:right}
 @media (max-width:640px){.pl-list li{flex-direction:column;align-items:flex-start;gap:6px}.pl-list em{white-space:normal;text-align:left}}
+.extra-photos{display:grid;gap:28px}
+.extra-photos .extra-photo img{aspect-ratio:4/3}
+@media (min-width:861px){.extra-photos .extra-photo:last-child img{aspect-ratio:4/3}}

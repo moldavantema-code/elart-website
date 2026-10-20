@@ -27,3 +27,4 @@ Not used on purpose: portraits of Artem and Olena, the "Recent evenings" gallery
 
 hero.jpg, wedding.mp4/.jpg, estate.mp4/.jpg, gallery/g1–g8.jpg — shot by ELART. Originals are in images/new/ (not uploaded to GitHub; see .gitignore).
 - Home intro photo: by Pablo Merchán Montes on Unsplash — https://unsplash.com/photos/woman-holding-fork-in-front-table-Orz90t6o0e4
+- Menus, pasta station: photo by Boris Ivas on Pexels — https://www.pexels.com/photo/table-with-baking-ingredient-18823980/
