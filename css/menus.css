@@ -113,3 +113,14 @@
 .extra-photos{display:grid;gap:28px}
 .extra-photos .extra-photo img{aspect-ratio:4/3}
 @media (min-width:861px){.extra-photos .extra-photo:last-child img{aspect-ratio:4/3}}
+
+/* private chef */
+.pc-facts{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);max-width:980px}
+.pc-facts li{padding:18px 20px 18px 0;font-size:14px;color:var(--ink-2);display:grid;gap:6px}
+.pc-facts li+li{padding-left:20px;border-left:1px solid var(--line,#DED6C9)}
+.pc-facts b{font:400 22px/1.2 var(--serif);color:var(--ink)}
+@media (max-width:720px){.pc-facts{grid-template-columns:1fr}.pc-facts li,.pc-facts li+li{padding:14px 0;border-left:0}.pc-facts li+li{border-top:1px solid var(--line,#DED6C9)}}
+.pc-price{font-size:14px}
+.pc-price b{font:400 44px/1 var(--serif);color:var(--ink);margin-right:6px}
+.pc-list{gap:22px}
+.pc-list .crs{display:block;font-style:normal;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--mute);margin-bottom:6px}

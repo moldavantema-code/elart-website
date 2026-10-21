@@ -336,3 +336,4 @@ body.home header.site:not(.solid) :focus-visible{outline-color:var(--cream-t)}
 @media (max-width:820px){.f-brand{justify-items:start}}
 a.tel{text-decoration:none}
 .contact a{text-decoration:none}
+.nav ul a{white-space:nowrap}
