@@ -124,3 +124,8 @@
 .pc-price b{font:400 44px/1 var(--serif);color:var(--ink);margin-right:6px}
 .pc-list{gap:22px}
 .pc-list .crs{display:block;font-style:normal;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--mute);margin-bottom:6px}
+.extra-photos{grid-template-columns:1fr 1fr;gap:20px 14px}
+.extra-photos .extra-photo:first-child{grid-column:1 / -1}
+.extra-photos .extra-photo:not(:first-child) img,.extra-photos .extra-photo:last-child:not(:first-child) img{aspect-ratio:4/5}
+.extra-photos .extra-photo:first-child{grid-column:auto}
+.extra-photos .extra-photo img,.extra-photos .extra-photo:last-child img{aspect-ratio:4/5}
