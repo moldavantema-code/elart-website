@@ -37,7 +37,7 @@
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </div>
   <nav class="wrap mnav" id="mnav" hidden>
-    <a href="index.html">Home</a><a href="menus.html">Menus</a><a href="yacht.html">Yacht</a><a href="#list">Our partners</a><a href="#join">Become a partner</a><a href="index.html#inquire">Inquire</a>
+    <a href="index.html">Home</a><a href="menus.html">Menus</a><a href="private-chef.html">Private chef</a><a href="yacht.html">Yacht</a><a href="partners.html">Partners</a><a href="about.html">About</a><a href="index.html#faq">FAQ</a><a href="index.html#inquire">Check your date</a>
   </nav>
 </header>
 
@@ -136,9 +136,9 @@
             <div class="f"><label for="category">Category</label><select id="category" name="category" required><option value="">Select</option><option>Venues &amp; estates</option><option>Planners</option><option>Florals &amp; décor</option><option>Rentals</option><option>Photo &amp; video</option><option>Music &amp; entertainment</option><option>Kids entertainment</option><option>Bar service</option><option>Cake &amp; pastry</option><option>Food partners</option><option>Yacht charters</option><option>Beauty</option><option>Lighting &amp; sound</option><option>Transportation</option><option>Other</option></select></div>
             <div class="f"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
             <div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-            <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required pattern="[^0-9]*([0-9][^0-9]*){10,}" title="Enter a phone number with at least 10 digits"></div>
             <div class="f"><label for="site">Website or Instagram</label><input id="site" name="site"></div>
-            <div class="f full"><label for="about">About your company</label><textarea id="about" name="about"></textarea></div>
+            <div class="f full"><label for="about">About your company <small>(optional)</small></label><textarea id="about" name="about"></textarea></div>
             <div class="actions full"><button type="submit" class="btn">Send</button></div>
           </div>
         </form>
@@ -154,7 +154,7 @@
 
 <footer id="privacy">
   <div class="wrap">
-    <nav><a href="index.html#weddings">Weddings</a><a href="menus.html">Menus</a><a href="private-chef.html">Private chef</a><a href="yacht.html">Yacht</a><a href="partners.html">Partners</a><a href="index.html#faq">FAQ</a><a href="https://www.instagram.com/elartcatering/" target="_blank" rel="noopener">Instagram</a></nav>
+    <nav><a href="index.html#weddings">Weddings</a><a href="menus.html">Menus</a><a href="private-chef.html">Private chef</a><a href="yacht.html">Yacht</a><a href="partners.html">Partners</a><a href="index.html#faq">FAQ</a><a href="https://www.instagram.com/elartcatering/" target="_blank" rel="noopener">Instagram</a><a href="privacy.html">Privacy</a></nav>
     <div class="f-brand"><a class="mark" href="index.html">ELART</a><span class="tagline">Good food brings people together</span></div>
     <span class="r">Licensed caterer · Miami, Florida · © 2026</span>
   </div>

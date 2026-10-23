@@ -35,6 +35,7 @@
     return ok;
   }
   var isEmail = function (x) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x); };
+  var isPhone = function (x) { return x.replace(/\D/g, '').length >= 10; };
 
   // Two-step form (homepage)
   var next = $('next'), back = $('back'), s1 = $('s1'), s2 = $('s2'), p1 = $('p1'), p2 = $('p2');
@@ -43,6 +44,7 @@
       var ok = [
         check('name', 'Enter your name.', function (x) { return x.length > 1; }),
         check('email', 'Enter an email like name@example.com.', isEmail),
+        check('phone', 'Enter your phone number.', isPhone),
         check('date', 'Choose the date.', function (x) { return !!x; }),
         check('type', 'Choose the occasion.', function (x) { return !!x; })
       ].every(Boolean);
@@ -69,7 +71,8 @@
           check('date', 'Choose the charter date.', function (x) { return !!x; }),
           check('guests', 'Enter the number of guests.', function (x) { return +x > 0; }),
           check('name', 'Enter your name.', function (x) { return x.length > 1; }),
-          check('phone', 'Enter a phone number so we can text the quote.', function (x) { return x.replace(/\D/g, '').length >= 10; })
+          check('phone', 'Enter a phone number so we can text the quote.', isPhone),
+          check('email', 'Enter an email like name@example.com.', isEmail)
         ].every(Boolean);
         if (!ok) return;
       }
