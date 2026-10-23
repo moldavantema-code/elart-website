@@ -85,6 +85,8 @@
           var name = $('name');
           $('tname').textContent = name ? name.value.trim().split(' ')[0] : '';
           form.hidden = true; thanks.hidden = false;
+          var fname = form.getAttribute('name');
+          if (window.elartTrackLead && (fname === 'inquiry' || fname === 'yacht-quote')) window.elartTrackLead(fname);
         })
         .catch(function () {
           if (btn) { btn.disabled = false; btn.textContent = 'Try again'; }

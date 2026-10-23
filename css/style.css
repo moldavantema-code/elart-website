@@ -349,3 +349,10 @@ a.tel{text-decoration:none}
 .wa:hover{transform:scale(1.06)}
 .wa svg{width:30px;height:30px;fill:#fff}
 @media (max-width:980px){.wa{right:16px;bottom:calc(82px + env(safe-area-inset-bottom,0px));width:52px;height:52px}}
+.cc{position:fixed;left:20px;bottom:20px;z-index:40;max-width:420px;background:var(--ink);color:#F3EEE6;padding:18px 20px;display:grid;gap:14px;box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:14px;line-height:1.5}
+.cc p{margin:0}
+.cc a{color:#F3EEE6}
+.cc-b{display:flex;gap:10px}
+.cc .btn{background:#F3EEE6;color:var(--ink);border-color:#F3EEE6;padding:12px 18px}
+.cc .btn.ghost{background:transparent;color:#F3EEE6;border:1px solid rgba(243,238,230,.5)}
+@media (max-width:980px){.cc{left:12px;right:12px;max-width:none;bottom:calc(78px + env(safe-area-inset-bottom,0px))}body.cc-open .wa{display:none}}
