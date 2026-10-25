@@ -46,3 +46,4 @@ img.pc.logo,.pc img.logo{border-style:solid;padding:14px}
 /* Logos: same frame for monograms and real logos */
 .pc .logo{height:auto;aspect-ratio:16/10}
 .pc img.logo{display:block;width:100%;object-fit:contain;padding:0;border:1px solid var(--line);background:#F6ECDF}
+.pc img.logo.photo{object-fit:cover}
