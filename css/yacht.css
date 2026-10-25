@@ -60,3 +60,8 @@ td:first-child{font:400 21px/1.25 var(--serif);color:var(--ink);width:28%}
 .radio input{accent-color:#141414}
 .mn .mprice{font-size:13px;color:var(--ink-2)}
 .mn .mprice b{font:400 30px/1 var(--serif);color:var(--ink);margin-right:4px}
+.formats{grid-template-columns:repeat(2,1fr)}
+@media (max-width:900px){.formats{grid-template-columns:1fr}}
+.menus{grid-template-columns:repeat(3,1fr)}
+@media (max-width:1000px){.menus{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.menus{grid-template-columns:1fr}}
