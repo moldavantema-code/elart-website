@@ -412,3 +412,5 @@ a.tel{text-decoration:none}
 @media (max-width:900px){.case-grid{grid-template-columns:1fr}.case-facts{grid-template-columns:1fr 1fr 1fr}}
 .how .steps li ul{display:none}
 @media (max-width:600px){.menu-grid{grid-template-columns:1fr 1fr!important;gap:10px}.menu-card{padding:16px}.menu-card .mc-d{display:none}.menu-card h3{font-size:21px}.menu-card .price b{font-size:28px}.menu-card .lbl{font-size:9px;letter-spacing:.14em}.menu-card .link{font-size:9.5px;letter-spacing:.14em}}
+/* keep WhatsApp clear of the "Powered by Netlify" badge (bottom-right) */
+@media (min-width:981px){.wa{bottom:96px;right:24px}}
