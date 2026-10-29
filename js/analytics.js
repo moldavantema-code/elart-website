@@ -48,7 +48,7 @@
     banner.className = 'cc';
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-label', 'Cookie preferences');
-    banner.innerHTML = '<p>We use cookies from Google Analytics and Meta to see how visitors use our site and to measure our ads. ' +
+    banner.innerHTML = '<p>We use cookies for analytics and ad measurement. ' +
       '<a href="/privacy.html">Privacy policy</a></p>' +
       '<div class="cc-b"><button type="button" class="btn" data-v="yes">Accept</button>' +
       '<button type="button" class="btn ghost" data-v="no">Decline</button></div>';
