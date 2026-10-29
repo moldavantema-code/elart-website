@@ -26,6 +26,27 @@
     });
   }
 
+
+  // Preselect the menu when arriving from "Check availability for this menu" (?menu=classic#inquire)
+  try {
+    var pm = new URLSearchParams(location.search).get('menu'), msel = $('menu'), tsel = $('type');
+    if (pm && msel) {
+      for (var k = 0; k < msel.options.length; k++) if (msel.options[k].value === pm) msel.selectedIndex = k;
+      var tmap = { 'wedding': 'Wedding', 'private-chef': 'Private chef at home', 'yacht': 'Yacht charter' };
+      if (tsel && tmap[pm]) tsel.value = tmap[pm];
+    }
+  } catch (e) {}
+
+  // Videos below the first screen load only when they come into view
+  var lv = document.querySelectorAll('video.lazy-video[data-src]');
+  if (lv.length) {
+    var start = function (v) { if (!v.dataset.src) return; v.src = v.dataset.src; v.removeAttribute('data-src'); v.play && v.play().catch(function () {}); };
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) { start(en.target); io.unobserve(en.target); } }); }, { rootMargin: '300px 0px' });
+      lv.forEach(function (v) { io.observe(v); });
+    } else { lv.forEach(start); }
+  }
+
   // Field check helper: shows the message under the field when the test fails
   function check(id, msg, test) {
     var el = $(id), err = $('e-' + id);

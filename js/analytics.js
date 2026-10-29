@@ -49,7 +49,7 @@
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-label', 'Cookie preferences');
     banner.innerHTML = '<p>We use cookies for analytics and ad measurement. ' +
-      '<a href="/privacy.html">Privacy policy</a></p>' +
+      '<a href="/privacy">Privacy policy</a></p>' +
       '<div class="cc-b"><button type="button" class="btn" data-v="yes">Accept</button>' +
       '<button type="button" class="btn ghost" data-v="no">Decline</button></div>';
     banner.addEventListener('click', function (e) {
