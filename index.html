@@ -249,23 +249,16 @@
       <div>
         <form id="form" name="inquiry" data-form="home" method="POST" data-netlify="true" netlify-honeypot="company" novalidate>
           <input type="hidden" name="form-name" value="inquiry"><p hidden><label>Leave empty <input name="company"></label></p>
-          <div class="prog"><span id="p1" class="on">1 · You</span><span>/</span><span id="p2">2 · Your event</span></div>
+          <input type="hidden" id="menu" name="menu" value="">
           <div class="fields" id="s1">
             <div class="f"><label for="name">Name</label><input id="name" name="name" autocomplete="name"><span class="err" id="e-name"></span></div>
-            <div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><span class="err" id="e-email"></span></div>
             <div class="f"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(305) 555-0123"><span class="err" id="e-phone"></span></div>
+            <div class="f full"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><span class="err" id="e-email"></span></div>
             <div class="f"><label for="date">Date</label><input id="date" name="date" type="date"><span class="err" id="e-date"></span></div>
+            <div class="f"><label for="guests">Guests</label><input id="guests" name="guests" type="number" min="1" inputmode="numeric" placeholder="e.g. 50"></div>
             <div class="f full"><label for="type">Occasion</label><select id="type" name="type"><option value="">Select</option><option>Wedding</option><option>Rehearsal dinner</option><option>Private celebration</option><option>Private chef at home</option><option>Yacht charter</option><option>Corporate</option></select><span class="err" id="e-type"></span></div>
-            <div class="actions full"><button type="button" class="btn" id="next">Continue</button></div>
-          </div>
-          <div class="fields" id="s2" hidden>
-            <div class="f"><label for="venue">Venue or address</label><input id="venue" name="venue"></div>
-            <div class="f"><label for="guests">Guests</label><input id="guests" name="guests" type="number" min="1" inputmode="numeric"></div>
-            <div class="f full"><label for="menu">Menu <small>(optional)</small></label><select id="menu" name="menu"><option value="">Not sure yet</option><option value="classic">Classic menu · $125</option><option value="garden-grill">Garden Grill · $130</option><option value="signature">Signature menu · $150</option><option value="premium">Premium menu · $175</option><option value="wedding">Wedding menu · $200</option><option value="private-chef">Private chef · from $150</option><option value="yacht">Yacht delivery</option></select></div>
-            <div class="f full"><label for="budget">Catering budget</label><select id="budget" name="budget"><option value="">Optional</option><option>Under $2,000</option><option>$2,000 – $5,000</option><option>$5,000 – $15,000</option><option>$15,000 – $30,000</option><option>$30,000 – $50,000</option><option>$50,000+</option><option>Not sure yet</option></select></div>
-            <div class="f full"><label for="vision">Short message <small>(optional)</small></label><textarea id="vision" name="vision"></textarea></div>
             <label class="consent full" for="sms"><input type="checkbox" id="sms" name="sms_consent" value="yes"><span>I agree to receive text messages from ELART about my inquiry. Message and data rates may apply. Reply STOP to opt out. See our <a href="/privacy">Privacy Policy</a>.</span></label>
-            <div class="actions full"><button type="button" class="btn ghost" id="back">Back</button><button type="submit" class="btn">Start planning</button></div>
+            <div class="actions full"><button type="submit" class="btn">Check your date</button></div>
           </div>
         </form>
         <div class="thanks" id="thanks" hidden>

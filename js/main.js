@@ -31,7 +31,8 @@
   try {
     var pm = new URLSearchParams(location.search).get('menu'), msel = $('menu'), tsel = $('type');
     if (pm && msel) {
-      for (var k = 0; k < msel.options.length; k++) if (msel.options[k].value === pm) msel.selectedIndex = k;
+      if (msel.options) { for (var k = 0; k < msel.options.length; k++) if (msel.options[k].value === pm) msel.selectedIndex = k; }
+      else if (/^[a-z-]{2,20}$/.test(pm)) msel.value = pm;
       var tmap = { 'wedding': 'Wedding', 'private-chef': 'Private chef at home', 'yacht': 'Yacht charter' };
       if (tsel && tmap[pm]) tsel.value = tmap[pm];
     }
@@ -55,6 +56,9 @@
     if (err) err.textContent = ok ? '' : msg;
     return ok;
   }
+  // Clear a field's error as soon as the visitor edits it
+  document.addEventListener('input', function (e) { var er = e.target && e.target.id && $('e-' + e.target.id); if (er) er.textContent = ''; });
+  document.addEventListener('change', function (e) { var er = e.target && e.target.id && $('e-' + e.target.id); if (er) er.textContent = ''; });
   var isEmail = function (x) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x); };
   var isPhone = function (x) { return x.replace(/\D/g, '').length >= 10; };
 
@@ -87,6 +91,16 @@
   if (form && thanks) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (form.dataset.form === 'home') {
+        var okh = [
+          check('name', 'Enter your name.', function (x) { return x.length > 1; }),
+          check('phone', 'Enter your phone number.', isPhone),
+          check('email', 'Enter an email like name@example.com.', isEmail),
+          check('date', 'Choose the date.', function (x) { return !!x; }),
+          check('type', 'Choose the occasion.', function (x) { return !!x; })
+        ].every(Boolean);
+        if (!okh) return;
+      }
       if (form.dataset.form === 'yacht') {
         var ok = [
           check('date', 'Choose the charter date.', function (x) { return !!x; }),
