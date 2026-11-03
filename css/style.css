@@ -414,3 +414,11 @@ a.tel{text-decoration:none}
 @media (max-width:600px){.menu-grid{grid-template-columns:1fr 1fr!important;gap:10px}.menu-card{padding:16px}.menu-card .mc-d{display:none}.menu-card h3{font-size:21px}.menu-card .price b{font-size:28px}.menu-card .lbl{font-size:9px;letter-spacing:.14em}.menu-card .link{font-size:9.5px;letter-spacing:.14em}}
 /* keep WhatsApp clear of the "Powered by Netlify" badge (bottom-right) */
 @media (min-width:981px){.wa{bottom:96px;right:24px}}
+/* contact list: label and value clearly separated */
+.contact{gap:0;max-width:460px;border-top:1px solid var(--line)}
+.contact > span{display:grid;grid-template-columns:130px 1fr;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+.contact small{font:600 10px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.contact b{font-weight:500;font-size:16px}
+.contact b a{border-bottom:1px solid transparent;transition:border-color .2s}
+.contact b a:hover{border-bottom-color:currentColor}
+@media (max-width:520px){.contact > span{grid-template-columns:1fr;gap:4px;padding:11px 0}}
