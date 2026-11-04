@@ -422,3 +422,8 @@ a.tel{text-decoration:none}
 .contact b a{border-bottom:1px solid transparent;transition:border-color .2s}
 .contact b a:hover{border-bottom-color:currentColor}
 @media (max-width:520px){.contact > span{grid-template-columns:1fr;gap:4px;padding:11px 0}}
+.kind-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px}
+.kind .stars{margin:0;color:var(--accent);letter-spacing:.12em;font-size:18px}
+.kind .stars span{color:var(--mute);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin-left:8px}
+.kind-note{margin-top:36px;font-size:13px;color:var(--mute)}
+.kind{padding-block:clamp(64px,8vw,110px)}
