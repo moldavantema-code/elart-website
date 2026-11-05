@@ -427,3 +427,11 @@ a.tel{text-decoration:none}
 .kind .stars span{color:var(--mute);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin-left:8px}
 .kind-note{margin-top:36px;font-size:13px;color:var(--mute)}
 .kind{padding-block:clamp(64px,8vw,110px)}
+/* reviews visibility */
+.hero-rev{justify-self:start;display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:13px;letter-spacing:.04em;color:var(--cream-t);text-decoration:none}
+.hero-rev .st{color:#e3b04b;font-size:16px;letter-spacing:.12em}
+.hero-rev u{text-decoration:none;border-bottom:1px solid currentColor;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;padding-bottom:1px}
+.hero-rev:hover u{color:#e3b04b}
+.kind-head{align-items:flex-end}
+.kind-h{margin:14px 0 0;font-size:clamp(36px,4.6vw,64px)}
+#reviews{scroll-margin-top:80px}
