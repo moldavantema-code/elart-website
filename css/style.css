@@ -435,8 +435,18 @@ a.tel{text-decoration:none}
 .kind-head{align-items:flex-end}
 .kind-h{margin:14px 0 0;font-size:clamp(36px,4.6vw,64px)}
 #reviews{scroll-margin-top:80px}
-/* Thanksgiving announcement */
-.hero-ann{justify-self:start;display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:11px 18px;border:1px solid rgba(227,176,75,.75);background:rgba(20,16,12,.35);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:var(--cream-t);text-decoration:none;font-size:13.5px;letter-spacing:.03em}
-.hero-ann b{color:#e3b04b;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
-.hero-ann u{text-decoration:none;border-bottom:1px solid currentColor;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;padding-bottom:1px}
-.hero-ann:hover u{color:#e3b04b}
+/* Thanksgiving feature (main news) */
+.tgf{padding-top:calc(96px + env(safe-area-inset-top,0px));padding-bottom:clamp(48px,8vh,96px);background:#15110d}
+.tgf-in{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:center}
+.tgf-ph{margin:0;aspect-ratio:4/5;overflow:hidden;max-height:78vh}
+.tgf-ph img{width:100%;height:100%;object-fit:cover;display:block}
+.tgf-txt{display:grid;gap:clamp(14px,2.2vh,22px);justify-items:start}
+.tgf-lbl{font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:#e3b04b}
+.tgf h2{font-size:clamp(44px,6vw,96px);line-height:1.02;color:var(--cream-t);max-width:11ch}
+.tgf h2 em{font-style:normal;color:#e3b04b}
+.tgf-star{font-family:var(--serif);font-size:clamp(22px,2.2vw,32px);line-height:1.2;color:var(--cream-t);margin:0}
+.tgf-lead{font-size:clamp(15px,1.25vw,18px);line-height:1.6;color:rgba(239,230,214,.78);max-width:52ch;margin:0}
+.tgf-price{display:flex;align-items:baseline;gap:14px;margin:4px 0 0}
+.tgf-price b{font-family:var(--serif);font-weight:400;font-size:clamp(44px,4.4vw,64px);color:var(--cream-t);line-height:1}
+.tgf-price span{font-size:14px;letter-spacing:.04em;color:rgba(239,230,214,.78)}
+@media (max-width:820px){.tgf-in{grid-template-columns:1fr}.tgf-ph{aspect-ratio:4/3;max-height:none}.tgf-ph img{object-position:50% 40%}}
