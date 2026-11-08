@@ -435,3 +435,8 @@ a.tel{text-decoration:none}
 .kind-head{align-items:flex-end}
 .kind-h{margin:14px 0 0;font-size:clamp(36px,4.6vw,64px)}
 #reviews{scroll-margin-top:80px}
+/* Thanksgiving announcement */
+.hero-ann{justify-self:start;display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:11px 18px;border:1px solid rgba(227,176,75,.75);background:rgba(20,16,12,.35);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:var(--cream-t);text-decoration:none;font-size:13.5px;letter-spacing:.03em}
+.hero-ann b{color:#e3b04b;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
+.hero-ann u{text-decoration:none;border-bottom:1px solid currentColor;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;padding-bottom:1px}
+.hero-ann:hover u{color:#e3b04b}

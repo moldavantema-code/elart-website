@@ -133,3 +133,6 @@
 .pinc li::before{content:"— ";color:var(--mute)}
 .pex{font-size:14px;color:var(--ink);margin:2px 0}
 .btn.sm{padding:13px 14px;font-size:10px;letter-spacing:.16em;text-align:center;margin-top:4px}
+/* seasonal menu card */
+.pkg.seasonal{grid-column:1/-1;border-color:var(--accent)}
+@media (min-width:821px){.pkg.seasonal{grid-template-columns:1fr 1fr;column-gap:clamp(24px,4vw,56px)}.pkg.seasonal>*{grid-column:1}.pkg.seasonal .pl,.pkg.seasonal .pinc,.pkg.seasonal .pex{grid-column:2}.pkg.seasonal .pl{grid-row:1}.pkg.seasonal .pinc{grid-row:2/4}.pkg.seasonal .pex{grid-row:4}}
