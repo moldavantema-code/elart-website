@@ -136,3 +136,11 @@
 /* seasonal menu card */
 .pkg.seasonal{grid-column:1/-1;border-color:var(--accent)}
 @media (min-width:821px){.pkg.seasonal{grid-template-columns:1fr 1fr;column-gap:clamp(24px,4vw,56px)}.pkg.seasonal>*{grid-column:1}.pkg.seasonal .pl,.pkg.seasonal .pinc,.pkg.seasonal .pex{grid-column:2}.pkg.seasonal .pl{grid-row:1}.pkg.seasonal .pinc{grid-row:2/4}.pkg.seasonal .pex{grid-row:4}}
+/* large events banner (wedding) */
+.big-ask{background:var(--ink);color:var(--ivory);padding:clamp(36px,6vw,64px) 0;text-align:center}
+.big-ask .ba-t{font-family:var(--serif);font-size:clamp(34px,5vw,64px);line-height:1.05;margin:0}
+.big-ask .ba-t em{font-style:normal;color:#e3b04b}
+.big-ask .ba-s{font-size:clamp(15px,1.4vw,18px);color:rgba(246,242,234,.8);margin:14px auto 26px;max-width:46ch}
+.big-ask .btn{background:#e3b04b;border-color:#e3b04b;color:var(--ink)}
+.big-ask .btn:hover{background:transparent;color:#e3b04b}
+.ask100{font-weight:600;color:var(--ink);font-size:14px;border-left:3px solid #e3b04b;padding-left:10px;margin:2px 0}
